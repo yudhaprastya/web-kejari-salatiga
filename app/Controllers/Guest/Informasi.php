@@ -24,13 +24,17 @@ class Informasi extends BaseController
 
     public function jadwalSidang()
     {
+        $page = (int) ($this->request->getGet('page') ?? 1);
+        $limit = (int) ($this->request->getGet('limit') ?? 10);
+        $offset = ($page - 1) * $limit;
+
         $jadwalSidangModel = new JadwalSidangModel();
 
-        $pidum = $jadwalSidangModel->where('kategori', 'pidum')->orderBy('tanggal', 'desc')->limit(10)->findAll();
-        $pidsus = $jadwalSidangModel->where('kategori', 'pidsus')->orderBy('tanggal', 'desc')->limit(10)->findAll();
+        $pidum = $jadwalSidangModel->where('kategori', 'pidum')->orderBy('tanggal', 'desc')->getWithJaksa($limit, $offset);
+        $pidsus = $jadwalSidangModel->where('kategori', 'pidsus')->orderBy('tanggal', 'desc')->getWithJaksa($limit, $offset);
 
-        $this->data["pidum"] = $pidum;
-        $this->data["pidsus"] = $pidsus;
+        $this->data["pidum"] = $pidum['data'];
+        $this->data["pidsus"] = $pidsus['data'];
 
         return view('guest/informasi/jadwal_sidang_view', $this->data);
     }

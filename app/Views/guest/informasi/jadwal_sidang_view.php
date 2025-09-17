@@ -35,7 +35,7 @@
                             <th scope="col">No</th>
                             <th scope="col">Tanggal</th>
                             <th scope="col">Terdakwa</th>
-                            <th scope="col">J.P.U</th>
+                            <th scope="col">JPU</th>
                             <th scope="col">No. Perkara</th>
                             <th scope="col">Agenda</th>
                             <th scope="col">Tempat</th>
@@ -47,7 +47,11 @@
                             <th scope="row">1</th>
                             <td><?php echo esc($item['tanggal']) ?></td>
                             <td><?php echo esc($item['terdakwa']) ?></td>
-                            <td><?php echo esc($item['jpu']) ?></td>
+                            <td>
+                                <?php foreach ($item['jaksa_list'] as $jpu): ?>
+                                    <?= $jpu ?>
+                                <?php endforeach; ?>
+                            </td>
                             <td><?php echo esc($item['no_perkara']) ?></td>
                             <td><?php echo esc($item['agenda']) ?></td>
                             <td><?php echo esc($item['tempat']) ?></td>
@@ -61,7 +65,7 @@
                             <th scope="col">No</th>
                             <th scope="col">Tanggal</th>
                             <th scope="col">Terdakwa</th>
-                            <th scope="col">J.P.U</th>
+                            <th scope="col">JPU</th>
                             <th scope="col">No. Perkara</th>
                             <th scope="col">Agenda</th>
                             <th scope="col">Tempat</th>
@@ -73,7 +77,11 @@
                             <th scope="row">1</th>
                             <td><?php echo esc($item['tanggal']) ?></td>
                             <td><?php echo esc($item['terdakwa']) ?></td>
-                            <td><?php echo esc($item['jpu']) ?></td>
+                            <td>
+                                <?php foreach ($item['jaksa_list'] as $jpu): ?>
+                                    <?= $jpu ?><br>
+                                <?php endforeach; ?>
+                            </td>
                             <td><?php echo esc($item['no_perkara']) ?></td>
                             <td><?php echo esc($item['agenda']) ?></td>
                             <td><?php echo esc($item['tempat']) ?></td>
