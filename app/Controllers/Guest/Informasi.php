@@ -46,4 +46,8 @@ class Informasi extends BaseController
     public function perjanjianKerja() {
         return view('guest/informasi/perjanjian_kerja', $this->data);
     }
+
+    public function laporanKinerja() {
+        return view('guest/informasi/laporan_kinerja', $this->data);
+    }
 }

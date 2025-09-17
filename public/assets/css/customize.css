@@ -140,6 +140,17 @@ ul {
     color: #ffffff;
 }
 
+.btn-white {
+    background-color: #ffffff;
+    color: #00923f;
+    border: 1px solid #00923f;
+}
+
+.btn-white:hover {
+    background-color: #00923f;
+    color: #ffffff;
+}
+
 .border-green {
     border-color: #00923f !important;
 }

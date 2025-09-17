@@ -51,6 +51,7 @@ $routes->group('', ['namespace' => 'App\Controllers\Guest'], function($routes) {
         $routes->get('renstra', 'Informasi::renstra');
         $routes->get('renja', 'Informasi::renja');
         $routes->get('perjanjian-kerja', 'Informasi::perjanjianKerja');
+        $routes->get('laporan-kinerja', 'Informasi::laporanKinerja');
     });
 });
 

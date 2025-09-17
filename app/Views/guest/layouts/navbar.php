@@ -60,6 +60,7 @@
                         <li><a class="dropdown-item" href="/informasi/renstra">Rencana Strategis</a></li>
                         <li><a class="dropdown-item" href="/informasi/renja">Rencana Kerja</a></li>
                         <li><a class="dropdown-item" href="/informasi/perjanjian-kerja">Perjanjian Kerja</a></li>
+                        <li><a class="dropdown-item" href="/informasi/laporan-kinerja">Laporan Kinerja</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
