@@ -32,6 +32,18 @@ class Informasi extends BaseController
         $this->data["pidum"] = $pidum;
         $this->data["pidsus"] = $pidsus;
 
-        return view('main/informasi/jadwalSidangView', $this->data);
+        return view('guest/informasi/jadwal_sidang_view', $this->data);
+    }
+
+    public function renstra() {
+        return view('guest/informasi/renstra', $this->data);
+    }
+
+    public function renja() {
+        return view('guest/informasi/renja', $this->data);
+    }
+    
+    public function perjanjianKerja() {
+        return view('guest/informasi/perjanjian_kerja', $this->data);
     }
 }

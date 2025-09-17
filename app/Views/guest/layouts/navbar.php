@@ -57,6 +57,9 @@
                         <li><a class="dropdown-item" href="https://www.lapor.go.id/" target="_blank">Lapor SP4N</a></li>
                         <li><a class="dropdown-item" href="https://sippn.menpan.go.id/instansi/1878889/kejaksaan-agung/kejaksaan-negeri-salatiga" target="_blank">SIPPN</a></li>
                         <li><a class="dropdown-item" href="https://ppid.kejaksaan.go.id/satker/kn-salatiga" target="_blank">PPID</a></li>
+                        <li><a class="dropdown-item" href="/informasi/renstra">Rencana Strategis</a></li>
+                        <li><a class="dropdown-item" href="/informasi/renja">Rencana Kerja</a></li>
+                        <li><a class="dropdown-item" href="/informasi/perjanjian-kerja">Perjanjian Kerja</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">

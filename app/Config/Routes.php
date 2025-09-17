@@ -46,7 +46,12 @@ $routes->group('', ['namespace' => 'App\Controllers\Guest'], function($routes) {
     $routes->get('/berita', 'Berita::index');
     $routes->get('/berita/(:segment)', 'Berita::detail/$1');
 
-    $routes->get('/informasi/jadwal-sidang', 'Informasi::jadwalSidang');
+    $routes->group('informasi', function($routes) {
+        $routes->get('jadwal-sidang', 'Informasi::jadwalSidang');
+        $routes->get('renstra', 'Informasi::renstra');
+        $routes->get('renja', 'Informasi::renja');
+        $routes->get('perjanjian-kerja', 'Informasi::perjanjianKerja');
+    });
 });
 
 // Admin Routes
